@@ -2,18 +2,18 @@ spring:
   profiles:
     active: dev
   rabbitmq:
-    host: 47.96.173.142
-    port: 5672
+    host: 119.29.171.50
+    port: 15672
     username: guest
     password: guest
   redis:
-    host: 47.96.173.142
-    password: paascloud@redis
+    host: 119.29.171.50
+    password: pouing@redis
     port: 6379
     timeout: 0
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: paascloud
+    username: pouing
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
     initial-size: 10
@@ -73,9 +73,9 @@ paascloud:
       expiredRemainMinutes: 20
       expiredMinutes: 120
   mail:
-    host: smtp.sina.com
-    username: 'your email address'
-    password: 'your email password'
+    host: smtp.21cn.com
+    username: 'liulipengju@21cn.com'
+    password: 'Aa123456@'
     test-connection: false
     properties:
       mail:
@@ -87,10 +87,10 @@ paascloud:
             required: true
   aliyun:
     key:
-      accessKeyId: 'your aliyun accessKeyId'
-      accessKeySecret: 'your aliyun accessKeySecret'
+      accessKeyId: '27ko8bNpCi1XN6aW'
+      accessKeySecret: 'gu01gEUBPZS4a4EM1wPYgvYTP2JA5X'
     rocketMq:
-      namesrvAddr: 47.96.173.142:9876
+      namesrvAddr: 119.29.171.50:9876
     sms:
       signName: 快乐学习网
       regionId: cn-beijing
@@ -100,8 +100,8 @@ paascloud:
       domain: dysmsapi.aliyuncs.com
   qiniu:
     key:
-      accessKey: 'your qiniu accessKey'
-      secretKey: 'your qiniu secretKey'
+      accessKey: 'qTANHK3BWJ61RfgZelCxDIaC6PBBhfmNV7xUHB8M'
+      secretKey: 'j1-4j-bB4SCx6vRVnDyBpTSFWzPc3JXeVP0_nNM2'
     oss:
       privateHost: 'your qiniu oss private host'
       publicHost: 'your qiniu oss public host'
