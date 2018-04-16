@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://119.29.171.50:3306/paascloud_omc?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://118.126.89.139:3306/pouing_omc?characterEncoding=utf8&useSSL=false
 paascloud:
   aliyun:
     rocketMq:
