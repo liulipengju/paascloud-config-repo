@@ -2,19 +2,22 @@ spring:
   profiles:
     active: dev
   rabbitmq:
-    host: 119.29.171.50
-    port: 15672
-    username: guest
-    password: guest
+    host: 193.112.187.136
+    port: 5672
+    username: pouing
+    password: plsd@2018
   redis:
-    host: 119.29.171.50
-    password: pouing@redis
-    port: 6379
+    cluster:
+      max-redirects:
+      nodes: 193.112.205.182:7001
+    host: 193.112.205.182
+    password: plsd@2018
+    port: 7001
     timeout: 0
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: pouing
-    password: 123456
+    password: Aa123456@
     type: com.alibaba.druid.pool.DruidDataSource
     initial-size: 10
     min-idle: 10
@@ -73,9 +76,9 @@ paascloud:
       expiredRemainMinutes: 20
       expiredMinutes: 120
   mail:
-    host: smtp.21cn.com
-    username: 'liulipengju@21cn.com'
-    password: 'Aa123456@'
+    host: smtp.163.com
+    username: 'preston_capital@163.com'
+    password: 'plsd2018'
     test-connection: false
     properties:
       mail:
