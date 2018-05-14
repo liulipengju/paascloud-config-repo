@@ -86,14 +86,14 @@ paascloud:
           auth: true
           timeout: 2500
           starttls:
-            enable: true
-            required: true
+            enable: false
+            required: false
   aliyun:
     key:
       accessKeyId: '27ko8bNpCi1XN6aW'
       accessKeySecret: 'gu01gEUBPZS4a4EM1wPYgvYTP2JA5X'
     rocketMq:
-      namesrvAddr: 119.29.171.50:9876
+      namesrvAddr: 193.112.205.182:9876,193.112.205.27:9876
     sms:
       signName: 快乐学习网
       regionId: cn-beijing
