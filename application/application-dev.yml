@@ -2,22 +2,19 @@ spring:
   profiles:
     active: dev
   rabbitmq:
-    host: 193.112.187.136
+    host: 119.29.171.50
     port: 5672
-    username: pouing
-    password: plsd@2018
+    username: guest
+    password: guest
   redis:
-    cluster:
-      max-redirects:
-      nodes: 193.112.205.182:7001
-    host: 193.112.205.182
-    password: plsd@2018
-    port: 7001
+    host: 119.29.171.50
+    password: pouing@redis
+    port: 6379
     timeout: 0
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: pouing
-    password: Aa123456@
+    password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
     initial-size: 10
     min-idle: 10
@@ -90,8 +87,8 @@ paascloud:
             required: false
   aliyun:
     key:
-      accessKeyId: '27ko8bNpCi1XN6aW'
-      accessKeySecret: 'gu01gEUBPZS4a4EM1wPYgvYTP2JA5X'
+      accessKeyId: 'your aliyun accessKeyId'
+      accessKeySecret: 'your aliyun accessKeySecret'
     rocketMq:
       namesrvAddr: 193.112.205.182:9876,193.112.205.27:9876
     sms:
@@ -103,8 +100,8 @@ paascloud:
       domain: dysmsapi.aliyuncs.com
   qiniu:
     key:
-      accessKey: 'qTANHK3BWJ61RfgZelCxDIaC6PBBhfmNV7xUHB8M'
-      secretKey: 'j1-4j-bB4SCx6vRVnDyBpTSFWzPc3JXeVP0_nNM2'
+      accessKey: 'your qiniu accessKey'
+      secretKey: 'your qiniu secretKey'
     oss:
       privateHost: 'your qiniu oss private host'
       publicHost: 'your qiniu oss public host'
